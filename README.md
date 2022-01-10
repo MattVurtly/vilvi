@@ -1,2 +1,2 @@
-# vilvi website re-design in progress
+# vilvi website NFT Platform
 #
