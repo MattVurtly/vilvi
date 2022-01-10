@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://vilvi.io">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<!-- Font Michroma rememebr to host for China -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,9 +35,9 @@
     <link href="assets/css/main.css?v=<?=time();?>" rel="stylesheet">
 
 	<!-- Font Awesome-->
-	<link href="/fa/css/fontawesome.css" rel="stylesheet">
-	<link href="/fa/css/brands.css" rel="stylesheet">
-	<link href="/fa/css/all.css" rel="stylesheet">
+	<link href="./fa/css/fontawesome.css" rel="stylesheet">
+	<link href="./fa/css/brands.css" rel="stylesheet">
+	<link href="./fa/css/all.css" rel="stylesheet">
  
 
 		<style type="text/css">
@@ -45,12 +45,16 @@
 		body
 		{
 			font-family: 'Ubuntu', sans-serif;
+			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.688);
+			background:url(./assets/img/vilvi-deck.png) no-repeat center;
+			background-position: center;
+  			background-size: cover;
 		}
 		
 
 		.header
 		{
-			background-color: #242633;
+			background-color: #18181a;
 			color: #F7F7F7;
 			width: 100vw;
 			padding: 5px;
@@ -89,7 +93,15 @@
 			@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
 		}
 
-		
+		#myVideo {
+  			position: fixed;
+  			right: 0;
+  			bottom: 0;
+  			min-width: 100%; 
+  			min-height: 100%;
+  			z-index: -1;
+  			opacity: 60%;
+		}
 
 		</style>
 
@@ -101,7 +113,10 @@
 	</head>
 
 	<body>
-<div style="z-index: 900000000000;"></div>		
+		<video autoplay muted loop id="myVideo">
+			<source src="./assets/img/static-video.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video> 
 <!-- Messenger Chat plugin Code 
 <div id="fb-root"></div>-->
 
@@ -136,6 +151,7 @@
 
 <!-- loader -->
   <body class="content text-center">
+	  <div class="overlay hide"></div>
 	<div id="loader">
 		<div class="middle">
 			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -154,9 +170,16 @@
 
 
     <div class="content cover-container d-flex h-auto p-3 mx-auto flex-column">
-      <header class="masthead mb-auto" style="z-index: 10000">
+      <header class="masthead" >
         <div class="inner">
           <h3 class="masthead-brand"><a href="index.html"><img src="assets/img/vinyl_logo.png" height="50px" class="record_spin"></a><span class="logo"><span style="color:#FBFF02">VILVI</span><span class="virtually" style="font-family: 'Pagal', sans-serif;"> Virtually Vinyl</span></h3>
+		  <div class="mob-nav-toggler">
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+		  </div>
+		  <div class="main-nav">
+			  <span class="_close">X</span>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="About.html">About</a>
@@ -165,17 +188,21 @@
             <a class="nav-link" href="Faq.html">FAQ</a>
             <a class="nav-link" href="Whitepaper.html">Whitepaper</a>
           </nav>
+		  </div>
         </div>
       </header>
-
-      <main role="main" class="cover" style="z-index: 10000">
+	
+		  
+	   
+	 
+      <main role="main" class="cover" >
       <div>
-        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-4s" style="padding-bottom: 20px;">The Original Vinyl NFT Store.</h3>
+        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-4s" style="padding-bottom: 20px; color: #FBFF02;">Original Vinyl NFT Store</h3>
 		<p class="animate__animated animate__fadeIn animate__delay-4s ">Create hybrid physical and digital music twins on Vinyl with NFT.
-			 For independent artists, collectors, labels and publishers.</p>
-        <p class="lead">
-          <a href="About.html" class="animate__animated animate__fadeIn animate__delay-4s btn btn-sm btn-secondary">Learn More</a>
-        </p>
+			<br> For independent artists, collectors, labels and publishers.</p>
+        <div class="text-center">
+          <a href="About.html" class="animate__animated animate__fadeIn animate__delay-4s border-4 btn btn-sm btn-secondary grow">Learn More</a>
+		</div>
       </div>
 
 <!-- Begin Mailchimp Signup Form -->	
@@ -187,12 +214,12 @@
 	#mce-LNAME  {background: #1A1E22 }
 	#mce-EMAIL  {background: #1A1E22 }
 	.button {background-color: #121212 !important; color: #FBFF02 !important; }
-	.signup-text{font-size: 10px;!important}
+	.signup-text{font-size: 10px !important;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup" style="background-color: #242633;" class="mailchimp2">
-	<h2 class="text-left" style="font-size:11px; padding 0px 10px 0 10px; letter-spacing: 1px;">Signup to  VILVI  mailing list<br>
+	<h2 class="text-left" style="font-size:11px; padding: 0px 10px 0 10px; letter-spacing: 1px;">Signup to  VILVI  mailing list<br>
 <form action="https://vilvi.us20.list-manage.com/subscribe/post?u=c7ac73ee92603f8f94822660b&amp;id=5a39d869c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 <div class="mc-field-group" style="margin-top: 20px;">
@@ -228,55 +255,55 @@
       </main> 
 
 
-
-      <footer class="animate__animated animate__fadeInRight animate__delay-4s mastfoot mt-auto ml-auto p-2 socials2" style="z-index: 99999999;absolute; bottom:30px;right:20px;" >
-        <div class="inner ">
-			<p><a
-  class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-  style="background-color: #242633;"
-  href="https://www.instagram.com/vilviofficial/" target="_blank"
-  role="button"
-  ><i class="fab fa-instagram " style="color: #FBFF0; !important "></i
-></p></a>
+<!--Footer socials -->
+<footer class="animate__animated animate__fadeInUp animate__delay-1s mastfoot socials2" >
+	<div class="inner ">
+		<p><a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
+style="background-color: #242633;"
+href="https://www.instagram.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Instagram"
+><i class="fab fa-instagram " style="color: #FBFF02 !important; "></i
+><span class="soclab">Instagram</span></p></a>
 <p>
 <a
-class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
 style="background-color: #242633;"
 href="https://www.facebook.com/Vilvinftvinyl" target="_blank"
-role="button"
-><i class="fab fa-facebook " style="color: #FBFF0; !important "></i
-></a>
+role="button" alt="Vilvi on Facebook"
+><i class="fab fa-facebook " style="color: #FBFF02 !important;"></i
+><span class="soclab">Facebook</span></a>
 </p>
 <p>
-	<a
-	class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-	style="background-color: #242633;"
-	href="https://twitter.com/vilviofficial/" target="_blank"
-	role="button"
-	><i class="fab fa-twitter " style="color: #FBFF0; !important "></i
-	></a>
-	</p>
-	<p>
-		<a
-		class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle yelbut"
-		style="background-color: #242633;"
-		href="https://t.me/+JsdfO0fpjJY4MWJk" target="_blank"
-		role="button" alt="Vilvi on Telegram">
-		<i class="fab fa-telegram " style="color: #FBFF0; !important "></i></a>
-		</p>
-        </div>
-      </footer>
-    </div>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
+style="background-color: #242633;"
+href="https://twitter.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Twitter"
+><i class="fab fa-twitter " style="color: #FBFF02 !important; "></i
+><span class="soclab">Twitter</span></a>
+</p>
+<p>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle  button-primary-override yelbut"
+style="background-color: #242633;"
+href="https://t.me/+JsdfO0fpjJY4MWJk" target="_blank"
+role="button" alt="Vilvi on Telegram">
+<i class="fab fa-telegram"></i>
+<span class="soclab">Telegram</span></a>	
+</p>
+	</div>
+  </footer>
+</div>
 
-
-<div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: 10; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
+<div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: -1; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
       </div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script type="module">
+<!--	<script type="module">
 
 		import * as THREE from './build/three.module.js';
 		import { OrbitControls } from './threejs/jsm/controls/OrbitControls.js';
@@ -458,7 +485,25 @@ role="button"
 			
 			
 
-		</script>	
-
+		</script>	-->
+<script>
+	jQuery(document).ready(function($){
+		$('.mob-nav-toggler .navbar-toggler').click(function(){
+			$('.main-nav').toggle();
+			$('.overlay').removeClass('hide');
+		});
+		$('.main-nav ._close').click(function(){
+			$('.main-nav').toggle();
+			$('.overlay').addClass('hide');
+		});
+		$('.overlay').click(function(){
+			$('.main-nav').toggle();
+			$('.overlay').addClass('hide');
+		});
+		
+		
+	});
+	</script>
+	
  </body>
 </html>

@@ -52,7 +52,7 @@ body {
 }
 
 body {
-  color: #6d6d6d;
+  color: #242633;
   background-color: #fff;
   font-family: "Oxygen", Helvetica, sans-serif;
   font-size: 14px;
@@ -693,7 +693,94 @@ body.has-active-menu {
   font-size: 11px;
   line-height: 24px;
 }
+.masthead {
+	position: relative;
+}
+.mob-nav-toggler {
+	position: absolute;
+	right: 0;
+}
+.mob-nav-toggler .navbar-toggler {
+	background: #FBFF02 ;
+}
+.overlay.hide{display: none;}
+.fixed-bottom{z-index: 99!important; bottom: 65px !important;}
+footer.socials2 {
+	position: fixed;
+	bottom: 0;
+	right: 10px;
+	width: 100%;
+	text-align: center;
+}
+footer.socials2 p {
+	display: inline-block;
+	padding: 10px 10px;
+  margin-bottom: 0;
+}
+.cover {
+	padding-top: 40px !important;
+  padding-bottom: 70px !important;
+}
+.cover-heading {
+	color: #fff;
+}
 
+.btn-gradient-2 {
+  background: 
+    linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+/******************** Responsive ****************/
+
+@media (min-width: 992px){
+.mob-nav-toggler{display: none;}
+.main-nav{display: block !important;}
+.main-nav ._close {display: none;}
+}
+
+@media (max-width: 992px){
+  .mob-nav-toggler{display: block;}
+  .main-nav{display: none;}
+  .main-nav .nav li a{width: 100%;}
+  .main-nav .nav.nav-masthead {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    bottom: 0;
+    background: #222;
+    z-index: 999;
+    display: block;
+    padding-top: 30px;
+  }
+  .main-nav ._close {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    cursor: pointer;
+    top: -9px;
+    font-weight: bold;
+    display: block;
+  }
+  .overlay {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+}
+@media (max-width: 768px){
+  .masthead-brand {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .logo{font-size: 15px;}
+  .mob-nav-toggler{top: 10px;}
+}
 @media all and (max-width: 660px) {
   #carbonads {
     display: none;

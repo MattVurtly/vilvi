@@ -32,14 +32,14 @@
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">	
-
+	<link rel="stylesheet" href="./assets/css/style.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css?v=<?=time();?>" rel="stylesheet">
 
 	<!-- Font Awesome-->
-	<link href="/fa/css/fontawesome.css" rel="stylesheet">
-	<link href="/fa/css/brands.css" rel="stylesheet">
-	<link href="/fa/css/all.css" rel="stylesheet">
+	<link href="./fa/css/fontawesome.css" rel="stylesheet">
+	<link href="./fa/css/brands.css" rel="stylesheet">
+	<link href="./fa/css/all.css" rel="stylesheet">
  
 
 		<style type="text/css">
@@ -48,9 +48,9 @@
 		{
 			font-family: 'Ubuntu', sans-serif;
 			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.688);
-			background:url(/assets/img/vilvi-deck.png) no-repeat center;
+			background:url(./assets/img/vilvi-deck.png) no-repeat center;
 			background-position: center;
-  			background-size: 90% 90%;
+  			background-size: cover;
 
 		}
 		
@@ -113,7 +113,7 @@
 
 	<body>
 		<video autoplay muted loop id="myVideo">
-			<source src="/assets/img/static-video.mp4" type="video/mp4">
+			<source src="./assets/img/static-video.mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		  </video> 
 <div style="z-index: 900000000000;"></div>		
@@ -151,11 +151,18 @@
 
 
   <body class="content text-center">
-
+	<div class="overlay hide"></div>
     <div class="content cover-container d-flex h-auto p-3 mx-auto flex-column">
-      <header class="masthead mb-auto" style="z-index: 10000">
+      <header class="masthead">
         <div class="inner">
 			<h3 class="masthead-brand"><a href="index.html"><img src="assets/img/vinyl_logo.png" height="50px" class="record_spin"></a><span class="logo"><span style="color:#FBFF02">VILVI</span><span class="virtually" style="font-family: 'Pagal', sans-serif;"> Virtually Vinyl</span></h3>
+			<div class="mob-nav-toggler">
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					☰
+				</button>
+			  </div>
+			  <div class="main-nav">
+				<span class="_close">X</span>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="About.html">About</a>
@@ -164,17 +171,20 @@
             <a class="nav-link" href="Faq.html">FAQ</a>
             <a class="nav-link" href="Whitepaper.html">Whitepaper</a>
           </nav>
+		</div>
         </div>
       </header>
 
-      <main role="main" class="cover" style="z-index: 10000">
+      <main role="main" class="cover" >
       <div>
-        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-0.5s" style="padding-bottom: 10px"><span style="color:#FBFF02">VILVI</span> Tokenomics </h3>
-		<p class="animate__animated animate__fadeIn animate__delay-0.5s mx-auto col-lg-8 p-5 col-sm12" >We have designed our tokenomics with longevity and transparency at its core. 
+        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-0.5s" style="padding-bottom: 10px; padding-top: 30px;"><span style="color:#FBFF02">VILVI</span> Tokenomics </h3>
+		<p class="animate__animated animate__fadeIn animate__delay-0.5s mx-auto col-lg-8 p-5 col-sm12 tokentext" >We have designed our tokenomics with longevity and transparency at its core. 
 			The public and operating sections of the token equal one another, and combined with 
 			time locking, this gives us a very robust model to work from that we believe will stand the test of time.<br>
 			</p><a href="">
-			<img src="/assets/img/Viilvi-Tokenomicsrd-png" style="width: 333px;border-radius: 17px; border-width: 6px;" class="grow img-fluid tokenpic border border-light animate__animated animate__fadeInUp animate__delay-1s cardshadow" alt="Vilvi Tokenomics"></a>
+				<div class="col-sm-4 col-sm12 grow mx-auto">	
+			<img src="/assets/img/Viilvi-Tokenomicsrd-png" style="width: 333px;border-radius: 17px; border-width: 6px;" class="grow img-fluid tokenpic border border-light animate__animated animate__fadeInUp animate__delay-0.6s cardshadow" alt="Vilvi Tokenomics"></a>
+			</div>
         <p class="lead">
 
         </p>
@@ -229,53 +239,71 @@
       </main> 
 
 
-
-	  <footer class="animate__animated animate__fadeInRight animate__delay-1s mastfoot mt-auto ml-auto p-2" style="z-index: 99999999; position: absolute; bottom:30px;right:20px; " >
-        <div class="inner ">
-			<p><a
-  class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-  style="background-color: #242633;"
-  href="https://www.instagram.com/vilviofficial/" target="_blank"
-  role="button" alt="Vilvi on Instagram"
-  ><i class="fab fa-instagram " style="color: #FBFF0; !important "></i
-></p></a>
+<!--Footer socials -->
+<footer class="animate__animated animate__fadeInUp animate__delay-1s mastfoot socials2" >
+	<div class="inner ">
+		<p><a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
+style="background-color: #242633;"
+href="https://www.instagram.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Instagram"
+><i class="fab fa-instagram " style="color: #FBFF02 !important; "></i
+><span class="soclab">Instagram</span></p></a>
 <p>
 <a
-class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
 style="background-color: #242633;"
 href="https://www.facebook.com/Vilvinftvinyl" target="_blank"
 role="button" alt="Vilvi on Facebook"
-><i class="fab fa-facebook " style="color: #FBFF0; !important "></i
-></a>
+><i class="fab fa-facebook " style="color: #FBFF02 !important;"></i
+><span class="soclab">Facebook</span></a>
 </p>
 <p>
-	<a
-	class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-	style="background-color: #242633;"
-	href="https://twitter.com/vilviofficial/" target="_blank"
-	role="button" alt="Vilvi on Twitter"
-	><i class="fab fa-twitter " style="color: #FBFF0; !important "></i
-	></a>
-	</p>
-	<p>
-	<a
-	class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle button-primary-override yelbut"
-	style="background-color: #242633;"
-	href="ttps://twitter.com/vilviofficial/" target="_blank"
-	role="button" alt="Vilvi on Telegram">
-	<i class="fab fa-telegram"></i></a>	
-	</p>
-        </div>
-      </footer>
-    </div>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
+style="background-color: #242633;"
+href="https://twitter.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Twitter"
+><i class="fab fa-twitter " style="color: #FBFF02 !important; "></i
+><span class="soclab">Twitter</span></a>
+</p>
+<p>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle  button-primary-override yelbut"
+style="background-color: #242633;"
+href="https://t.me/+JsdfO0fpjJY4MWJk" target="_blank"
+role="button" alt="Vilvi on Telegram">
+<i class="fab fa-telegram"></i>
+<span class="soclab">Telegram</span></a>	
+</p>
+	</div>
+  </footer>
+</div>
 
 
-<div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: 10; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
+<div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: -1; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
       </div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	<script>
+		jQuery(document).ready(function($){
+			$('.mob-nav-toggler .navbar-toggler').click(function(){
+				$('.main-nav').toggle();
+				$('.overlay').removeClass('hide');
+			});
+			$('.main-nav ._close').click(function(){
+				$('.main-nav').toggle();
+				$('.overlay').addClass('hide');
+			});
+			$('.overlay').click(function(){
+				$('.main-nav').toggle();
+				$('.overlay').addClass('hide');
+			});
+			
+			
+		});
+		</script>
  </body>
 </html>
