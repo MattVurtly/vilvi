@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="VilVi Virtually Vinyl">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+	<meta property="og:title" content="VILVI | NFT Virtual Vinyl | Store">
+	<meta property="og:site_name" content="Vilvi.io">
+	<meta property="og:url" content="https://vilvi.io">
+	<meta property="og:description" content="Create a hybrid physical and digital music twins on Vinyl with NFT. For independent artists, collectors, labels and publishers. Home of the token VLV. ">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="/assets/img/vinyl_logo.png">
+    <link rel="icon" href="/assets/img/favicons/favicon.ico">
 
     <title>VILVI | NFT Virtual Vinyl | Store</title>
 
@@ -36,14 +42,20 @@
 	<link href="/fa/css/all.css" rel="stylesheet">
  
 
+	<!-- local Fonts -->
+	<link rel="preload" as="font" href="Pagal.TTF" type="font/TTF" crossorigin="anonymous">
+
 		<style type="text/css">
 		
 		body
 		{
 			font-family: 'Ubuntu', sans-serif;
-			background:url(/assets/img/vilvi-deck.jpg) rgba(27, 15, 70, 0.584);
-  			background-size:cover;
-  			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.888);
+			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.688);
+			background:url(/assets/img/vilvi-deck.png) no-repeat center;
+			background-position: center;
+  			background-size: 90% 90%;
+			 
+
 
 		}
 		
@@ -67,7 +79,7 @@
 		h3	
 		{
 			font-family: 'Michroma', sans-serif;
-			font-size: 2rem;
+			font-size: 1.5em;
 		}	
 
 
@@ -92,23 +104,29 @@
 			@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
 		}
 
-		
-
+		#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  
+  opacity: 90%;
+}
 		</style>
-
-		<script>
-			setTimeout(function() {
-				$('body').addClass('loaded');
-    }, 3000)
-		</script>
 	</head>
 
 	<body>
+		<video autoplay muted loop id="myVideo">
+			<source src="/assets/img/static-video.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+		  </video> 
 <div style="z-index: 900000000000;"></div>		
-<!-- Messenger Chat plugin Code -->
-<div id="fb-root"></div>
+<!-- Messenger Chat plugin Code 
+<div id="fb-root"></div>-->
 
-<!-- Your Chat plugin code -->
+<!-- Your Chat plugin code 
 <div id="fb-customer-chat" class="fb-customerchat">
 </div>
 
@@ -116,9 +134,9 @@
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "101052952428969");
   chatbox.setAttribute("attribution", "biz_inbox");
-</script>
+</script>-->
 
-<!-- Your SDK code -->
+<!-- Your SDK code 
 <script>
   window.fbAsyncInit = function() {
 	FB.init({
@@ -134,41 +152,19 @@
 	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
 	fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-</script>
+</script>-->
 </div>
+</body>
 
 
   <body class="content text-center">
-	  <!-- loader 
-	<div id="loader">
-		<div class="middle">
-			<div class="bar bar1"></div>
-			<div class="bar bar2"></div>
-			<div class="bar bar3"></div>
-			<div class="bar bar4"></div>
-			<div class="bar bar5"></div>
-			<div class="bar bar6"></div>
-			<div class="bar bar7"></div>
-			<div class="bar bar8"></div>
-		  </div>
-		</div>
-
-
-		<div id="loader-wrapper">
-			
-			<div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-
-		</div>
-
--->
 
     <div class="content cover-container d-flex h-auto p-3 mx-auto flex-column">
       <header class="masthead mb-auto" style="z-index: 10000">
         <div class="inner">
-			<h3 class="masthead-brand"><a href="loader.html"><img src="assets/img/vinyl_logo.png" height="50px" class="record_spin"></a><span class="logo"><span style="color:#FBFF02">VILVI</span> Virtually Vinyl</span></h3>
+			<h3 class="masthead-brand"><a href="index.html"><img src="assets/img/vinyl_logo.png" height="50px" class="record_spin"></a><span class="logo"><span style="color:#FBFF02">VILVI</span><span class="virtually" style="font-family: 'Pagal', sans-serif;"> Virtually Vinyl</span></h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="loader.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link active" href="#">About</a>
 			<a class="nav-link" href="Roadmap.html">Roadmap</a>
 			<a class="nav-link" href="Tokenomics.html">Tokenomics</a>
@@ -179,21 +175,22 @@
       </header>
 
       <main role="main" class="cover" style="z-index: 10000">
-      <div>
-        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-0.5s" style="padding-bottom: 20px;">About <span style="color:#FBFF02">VILVI</span></h3>
-		<p class="animate__animated animate__fadeIn animate__delay-1.5s" style="padding-right: 25%;padding-left: 25%; text-align: justify;">
+      <div class="row" ></div>
+	  <div class="col-sm-4 col-sm12 grow"></div>
+		<img src="/assets/img/Virtual-Vinyl-NFT.png" style="max-height: 133px;" class="vilvinftimg record_spin ">
+        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-0.5s aboutvilvi" style="padding-bottom: 20px;">About <span style="color:#FBFF02">VILVI</span></h3>
+		<div class="animate__animated animate__fadeInUp animate__delay-1s col-lg-8 mx-auto pt-3 border card" style="background-color: rgba(90, 89, 59, 0.425); opacity: ; border-radius: 22px;">
+		<p class=" about-text">
 			VILVI is a unique platform for distributing music based physical music media and digital NFTs, with a marketplace for fans and collectors to buy and resell their work.
 We work with artists, labels and distributors to generate extra revenue from unique sales that work alongside the existing physical media and digital streaming economies.<br><br>
 We are a team of music professionals, economists and programmers that want to see a sustainable music economy and have designed each VILVI to stand the test of time. 
 Vinyl & NFTs often look beautiful, and are limited edition creations of the artist, just like Vinyl sleeves used to be. We would like to bring back the level of artistry around music releases, and the income possible for artists with this new technology.
 Buying an NFT is an investment for fans in the artist and their future artistry. The file cannot be damaged as it’s on the blockchain, and makes the vinyl or CD ultra-collectible. There is a similar incentive for investors to buy early work from musicians just as we have seen in the visual arts in 2021. We have also included some innovative defi fundraising mechanisms for artists and investors. 
 Buying a NFT allows the fans to have a collectable asset they can trade, so they can resell to others fans, whilst also generating income for artists through a % of resale. This is the technical innovation that has only just become possible with trading real-world items on blockchain. 
-
-
 		</p>
-			<img src="/assets/img/Virtual-Vinyl-NFT.png" style="max-height: 133px">
+			</div>
+		<div col-md4></div>
         <p class="lead">
-
         </p>
       </div>
 
@@ -205,11 +202,11 @@ Buying a NFT allows the fans to have a collectable asset they can trade, so they
 	#mce-FNAME  {background: #1A1E22 }
 	#mce-LNAME  {background: #1A1E22 }
 	#mce-EMAIL  {background: #1A1E22 }
-	.button {background: #FBFF02 }
+	.button {background-color: #121212 !important; color: #FBFF02 !important; }
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup" style="background-color: #242633;">
+<div id="mc_embed_signup" style="background-color: #242633;" class="mailchimp">
 	<h2 class="text-left" style="font-size:11px; padding 0px 10px 0 10px; letter-spacing: 1px;">Signup to  VILVI  mailing list<br>
 <form action="https://vilvi.us20.list-manage.com/subscribe/post?u=c7ac73ee92603f8f94822660b&amp;id=5a39d869c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -245,37 +242,46 @@ Buying a NFT allows the fans to have a collectable asset they can trade, so they
 
       </main> 
 
-
-	  <footer class="animate__animated animate__fadeInRight animate__delay-1s mastfoot mt-auto ml-auto p-2" style="z-index: 99999999;position:absolute; bottom:0;right:0;" >
-        <div class="inner ">
-			<p><a
-  class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-  style="background-color: #242633;"
-  href="https://www.instagram.com/vilviofficial/" target="_blank"
-  role="button"
-  ><i class="fab fa-instagram " style="color: #FBFF0; !important "></i
-></p></a>
+<!--Footer socials -->
+<footer class="animate__animated animate__fadeInRight animate__delay-1s mastfoot mt-auto ml-auto p-2" style="z-index: 99999999; position: absolute; bottom:30px;right:20px; " >
+	<div class="inner ">
+		<p><a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
+style="background-color: #242633;"
+href="https://www.instagram.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Instagram"
+><i class="fab fa-instagram " style="color: #FBFF0; !important "></i
+><span>Instagram</span></p></a>
 <p>
 <a
 class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
 style="background-color: #242633;"
 href="https://www.facebook.com/Vilvinftvinyl" target="_blank"
-role="button"
+role="button" alt="Vilvi on Facebook"
 ><i class="fab fa-facebook " style="color: #FBFF0; !important "></i
-></a>
+><span>Facebook</span></a>
 </p>
 <p>
-	<a
-	class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle"
-	style="background-color: #242633;"
-	href="https://twitter.com/vilviofficial/" target="_blank"
-	role="button"
-	><i class="fab fa-twitter " style="color: #FBFF0; !important "></i
-	></a>
-	</p>
-        </div>
-      </footer>
-    </div>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle "
+style="background-color: #242633;"
+href="https://twitter.com/vilviofficial/" target="_blank"
+role="button" alt="Vilvi on Twitter"
+><i class="fab fa-twitter " style="color: #FBFF0; !important "></i
+><span>Twitter</span></a>
+</p>
+<p>
+<a
+class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle glow button-primary-override yelbut"
+style="background-color: #242633;"
+href="https://t.me/+JsdfO0fpjJY4MWJk" target="_blank"
+role="button" alt="Vilvi on Telegram">
+<i class="fab fa-telegram"></i>
+<span>Telegram</span></a>	
+</p>
+	</div>
+  </footer>
+</div>
 
 <div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: 10; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
       </div>

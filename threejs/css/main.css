@@ -24,7 +24,7 @@ button {
 }
 
 canvas {
-	display: block;
+	display: inline;
 }
 
 #info {
