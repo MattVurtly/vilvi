@@ -711,6 +711,7 @@ footer.socials2 {
 	right: 10px;
 	width: 100%;
 	text-align: center;
+  z-index: 9999;
 }
 footer.socials2 p {
 	display: inline-block;
@@ -732,29 +733,82 @@ footer.socials2 p {
   border-radius: 50em;
   border: 4px solid transparent;
 }
+.socials2 .btn {
+	position: relative;
+}
+.crystal-cards-cont .card-img img {
+	height: auto;
+  margin-bottom: 20px;
+}
+.crystal-cards-cont .card-img{text-align: center;}
+.card1 .card-body {
+	background-image: linear-gradient(#47327d,#1c0d36);
+  border: 2px solid #9a82da;
+}
+.card2 .card-body {
+	background-image: linear-gradient(#80347c,#2e0928);
+  border: 2px solid #dc9198;
+}
+.card3 .card-body {
+	background-image: linear-gradient(#7036a4,#270d3a);
+  border: 2px solid #b34eda;
+}
+.crystal-cards-cont .card1 .card-img img{border: 2px solid #9baef0; border-radius: 10px;}
+.crystal-cards-cont .card2 .card-img img{border: 2px solid #aa4581; border-radius: 10px;}
+.crystal-cards-cont .card3 .card-img img{border: 2px solid #bd95eb; border-radius: 10px;}
+.home .cover {padding-bottom: 250px !important; text-align: center;}
+.crystal-cards-cont .card {
+	margin-bottom: 20px;
+}
+.crystal-cards-cont .card1 .card-txt {
+	color: #867bc9;
+}
+.crystal-cards-cont .card2 .card-txt {
+  color: #9f5a9b;
+	
+}
+.crystal-cards-cont .card3 .card-txt {
+	color: #9b4bc6;
+}
+.crystal-cards-cont .card-txt h3 {
+	text-shadow: 2px 2px 6px;
+}
 /******************** Responsive ****************/
 
 @media (min-width: 992px){
 .mob-nav-toggler{display: none;}
 .main-nav{display: block !important;}
 .main-nav ._close {display: none;}
+.mob-logo{display: none;}
 }
 
 @media (max-width: 992px){
   .mob-nav-toggler{display: block;}
+  .mob-logo {
+    display: block;
+    text-align: center;
+    position: absolute;
+    z-index: 9999;
+    right: 58px;
+    top: -5px;
+  }
   .main-nav{display: none;}
   .main-nav .nav li a{width: 100%;}
   .main-nav .nav.nav-masthead {
     position: fixed;
-    right: 0;
+    right: -400px;
     top: 0;
     width: 200px;
     bottom: 0;
     background: #222;
     z-index: 999;
     display: block;
-    padding-top: 30px;
+    padding-top: 68px;
+    transition: all 300ms ease-in-out;
+transform: translate(-400px);
+text-align: center;
   }
+  .main-nav.open-menu .nav.nav-masthead{transform: translate(0px); right: 0;}
   .main-nav ._close {
     position: absolute;
     right: 0;

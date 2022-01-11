@@ -319,22 +319,26 @@ min-height:200px;
   text-align: justify;
 }
 
+.tokentext{
+  text-align: justify;
+  padding-right: 1%;
+  padding-left: 1%; 
+}
 .pad25{
 
 }
 
-a span {
+.soclab {
   display: none;
   bottom: 50px;
-  left: 200px;
+  left: 10px;
   position: absolute;
   color: #ccc;
-  bottom: 10px;
   width: 100%;
 }
 
 a:hover span {
-  display: block
+  display: inline
 }
 
 
@@ -412,7 +416,7 @@ a:hover span {
   margin-bottom: 0;
 }
 .faq-accordian .card .card-header {
-  background-color: #8e8f97;
+  background-color: #262627;
   padding: 0;
   border-bottom-color: #1b1a1a;
   border-width: 3px;
@@ -435,9 +439,10 @@ a:hover span {
 }
 .faq-accordian .card .card-header h6 span {
   font-size: 1.7rem;
+  color: #FBFF02;
 }
 .faq-accordian .card .card-header h6.collapsed {
-  color: #3a3a3d;
+  color: #FBFF02;
 }
 .faq-accordian .card .card-header h6.collapsed span {
   -webkit-transform: rotate(-180deg);
@@ -454,6 +459,9 @@ a:hover span {
 
 @media only screen and (max-width: 1075px) {
   .mailchimp{display: none;}
+  .nav-link{
+    font-size: 18px!important;
+  }
 }
 /* For mobile styles: */
 @media only screen and (max-width: 735px) {
@@ -488,9 +496,19 @@ h3{
 			font-size: 2em;
 		}	
 
+    .virtually{
+      letter-spacing: 2px;
+    }    
 
 /* For mobile iphones 6,7,8: */
 @media only screen and (max-width: 667px) {
+  
+  .nav-link{
+    font-size: 18px!important;
+  }
+  .virtually{
+    letter-spacing: 1px;
+  }  
   .soclab{
     display:none !important;
   }
@@ -501,11 +519,12 @@ h3{
     margin-top: 10px;
   }
   .faq-accordian .card .card-header h6.collapsed{
-    font-size: 12px;
+    font-size: 14px;
   }
   p {
-    font-size: 0.7em;
-  }
+    font-size: 15px;
+    font-weight:normal;
+    font-family: Arial, Helvetica, sans-serif !important;}
   .vilvinftimg{
     text-align: center;
   }
@@ -534,6 +553,8 @@ h3{
        .socials-faq {display:none}
     .tokentext{
       padding: 0 !important;
+      padding-right: 7% !important;
+      padding-left: 7% !important; 
     }
     h3{font-size: 15px;}
     .mc-field-group label{font-size:9px;}
