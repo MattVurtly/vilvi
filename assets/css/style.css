@@ -699,9 +699,14 @@ body.has-active-menu {
 .mob-nav-toggler {
 	position: absolute;
 	right: 0;
+  color: #000;
+}
+
+.mob-nav-toggler:visited{
+  color: #000;
 }
 .mob-nav-toggler .navbar-toggler {
-	background: #FBFF02 ;
+	background: #edf3f0b5 ;
 }
 .overlay.hide{display: none;}
 .fixed-bottom{z-index: 99!important; bottom: 65px !important;}
