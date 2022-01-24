@@ -25,12 +25,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">	
-	<link rel="stylesheet" href="./assets/css/style.css?ver1.6">
-	<link rel="stylesheet" href="./assets/css/main.css?ver1.6">
+	<link rel="stylesheet" href="./assets/css/style.css?ver1.9">
+	<link rel="stylesheet" href="./assets/css/main.css?ver1.8">
 	
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css?v=<?=time();?>" rel="stylesheet">
@@ -47,7 +48,6 @@
 		{
 			font-family: 'Ubuntu', sans-serif;
 			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.688);
-			background:url(./assets/img/vilvi-deck.png) no-repeat center;
 			background-position: center;
   			background-size: cover;
 
@@ -164,7 +164,7 @@
 
 	<body>
 		<video autoplay muted loop id="myVideo">
-			<source src="./assets/img/static-video.mp4" type="video/mp4">
+			<source src="./assets/img/Vilvi-deck-vid-left..mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		  </video> 
 <div style="z-index: 900000000000;"></div>		
@@ -255,11 +255,11 @@ function openNavbar() {
       <main role="main" class="cover" >
       <div class="col-sm12" style="padding-top: 40px;">
         <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-0.5s" style="padding-bottom: 20px"><span style="color:#FBFF02">VILVI</span> White Paper</h3>
-		<p p class="animate__animated animate__fadeIn animate__delay-0.5s mx-auto col-lg-8 p-1 col-sm12 tokentext">The fully explained tokemonics, utility, functions and technical roadmap
-		This is the full plan. Everything. We believe in transparency and iterative feedback.This will be updated continuously, so please check the version number on your copy when viewing.</p>
-		<p style="padding-bottom: 10px">Available to download<a href="https://gateway.pinata.cloud/ipfs/QmbF4h5LKM74dpKdP3Dn4Wu7NaHznSXg35V8iDUFXxTKPr?preview=1" target="_blank"> HERE</a></p>
+		<p p class="animate__animated animate__fadeIn animate__delay-0.5s mx-auto col-lg-8 p-1 col-sm12 tokentext"><spoan class="roadmaptxt">All explained tokemonics, utility, functions and technical roadmap
+		This is the full plan. Everything. We believe in transparency and iterative feedback.This will be updated continuously, so please check the version number on your copy when viewing.</spoan></p>
+		<p style="padding-bottom: 10px">Available to download<a href="https://gateway.pinata.cloud/ipfs/QmNVXHUS3y78V6keivKSPmR57N8ywfse4K6wUtNqzn7vKG?preview=1" target="_blank"> HERE</a></p>
 		<div class="col-sm-4 col-sm12 grow mx-auto">
-        <a href="https://gateway.pinata.cloud/ipfs/QmbF4h5LKM74dpKdP3Dn4Wu7NaHznSXg35V8iDUFXxTKPr?preview=1" target="_blank"><img src="./assets/img/Vilvi-White-paper-rd.png" style="max-height: 333px;border-radius: 9px; min-height: 300px !important;" class="animate__animated animate__fadeInUp animate__delay-0.5s cardshadow border border-light border-3 grow wp-image"></a>
+        <a href="https://gateway.pinata.cloud/ipfs/QmNVXHUS3y78V6keivKSPmR57N8ywfse4K6wUtNqzn7vKG?preview=1" target="_blank"><img src="./assets/img/Vilvi-White-paper-rd.png" style="border-radius: 9px;" class="animate__animated animate__fadeInUp animate__delay-0.5s cardshadow border border-light border-3 grow wp-image whiteimg"></a>
 	</div>
 		<p class="lead">
 		</p>
@@ -354,32 +354,179 @@ role="button" alt="Vilvi on Telegram">
 </p>
 	</div>
   </footer>
+  <div class="cardino-cont">
+    
+	<div class=" animate__animated animate__fadeInRight animate__delay-1s cardino-badge">
+		<p style="text-orientation:uprsideways;writing-mode: vertical-rl; padding-top: 20px;margin-right: 0px; text-align: right;opacity: 0.7;">MADE WITH CARDANO</p>
+		<a href="https://cardano.org/" target="blank"><img class="grow" src="assets/img/cardano.png " ></a>
+	</div>
+  </div>
 </div>
 
 <div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: -1; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
       </div>
+
+	   <!-- Subscribe button -->
+		<div class="subscribe-fixed-btn">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+				Subscribe
+			  </button>
+			</div>
+
+
+ <!-- The Modal -->
+ <div class="modal modal-sm contact-mdl subscribe-mdl" id="myModal2">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		
+  
+		<!-- Modal body -->
+		<div class="modal-body1">
+			<div id="mc_embed_signup" style="background-color: #242633;" class="mailchimp2 ">
+			<h2 class="text-left" style="font-size:11px; padding: 0px 10px 0 10px; letter-spacing: 1px; color: #fff;">Signup to  VILVI  mailing list<br></h2>
+				<form action="https://vilvi.us20.list-manage.com/subscribe/post?u=c7ac73ee92603f8f94822660b&amp;id=5a39d869c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+				<div class="mc-field-group" style="margin-top: 20px;">
+					<label for="mce-FNAME" class="signup-text">First Name </label>
+					<input type="text" value="" name="FNAME" class="signup-text" id="mce-FNAME">
+				</div>
+				<div class="mc-field-group">
+					<label for="mce-LNAME">Last Name </label>
+					<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+				</div>
+				<div class="mc-field-group" style="margin-bottom: 20px;">
+					<label for="mce-EMAIL">Email  
+				</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+					<div id="mce-responses" class="clear foot">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7ac73ee92603f8f94822660b_5a39d869c5" tabindex="-1" value=""></div>
+						<div class="optionalParent">
+							<div class="clear foot">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!--<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>-->
+  
+	  </div>
+	</div>
+  </div>
+
+  
+
+
+
+		<!-- Button to Open the Modal -->
+		<div class="contact-fixed-btn">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	Email Us
+  </button>
+</div>
+  
+  <!-- The Modal 1-->
+  <div class="modal contact-mdl" id="myModal">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Email Us</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body">
+		  <!-- Form -->
+		  <form class="text-center" method="post" style="color: #757575;" id="contact-form" action="#!">
+<div class="messages"></div>
+			<!-- Name -->
+			<div class="md-form group text-left">
+				<!--<label for="materialLoginFormEmail">Name</label>-->
+			  <input type="text" class="form-control" name="name" placeholder="Name">
+			  
+			</div>
+	  
+			<!-- Email -->
+			<div class="md-form group text-left">
+				<!--<label for="materialLoginFormPassword">Email</label>-->
+			  <input type="email" class="form-control" name="email"  placeholder="Email">
+			  
+			</div>
+			<!-- Subject -->
+			<div class="md-form group text-left">
+				<label for="materialLoginFormPassword">Subject</label>
+			  <select class="form-control" name="subject" >
+				  <option>Aritst / Label</option>
+				  <option>Investor</option>
+				  <option>NFT / Vinyl Collector</option>
+				  <option>Creator of NFT</option>
+				  <option>Other</option>
+			  </select>
+			  
+			</div>
+		<!-- Message -->
+		<div class="md-form group text-left">
+			<label for="materialLoginFormPassword">Message</label>
+		<textarea class="form-control" name="message" placeholder="Message"></textarea>
+		</div>
+		<div class="md-form group text-left">
+		<div class="form-group">
+			<div class="g-recaptcha" data-sitekey="6LezZxYeAAAAAF2YSzcy0DK21moyhVnB0_6N-Rie" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+			<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+			<div class="help-block with-errors"></div>
+		</div>
+		</div>
+			<!-- Sign in button -->
+			<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">SEND</button>
+	
+		  </form>
+		  <!-- Form -->
+		
+  
+	  </div>
+	</div>
+  </div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script>
 		jQuery(document).ready(function($){
-			$('.mob-nav-toggler .navbar-toggler').click(function(){
-				$('.main-nav').toggle();
-				$('.overlay').removeClass('hide');
-			});
-			$('.main-nav ._close').click(function(){
-				$('.main-nav').toggle();
-				$('.overlay').addClass('hide');
-			});
-			$('.overlay').click(function(){
-				$('.main-nav').toggle();
-				$('.overlay').addClass('hide');
-			});
-			
-			
+		$('.mob-nav-toggler .navbar-toggler').click(function(){
+			//$('.main-nav').toggle();
+			$('.main-nav').addClass('open-menu');
+			$('.overlay').removeClass('hide');
 		});
+		$('.main-nav ._close').click(function(){
+			//$('.main-nav').toggle();
+			$('.main-nav').removeClass('open-menu');
+			$('.overlay').addClass('hide');
+		});
+		$('.overlay').click(function(){
+			//$('.main-nav').toggle();
+			$('.main-nav').removeClass('open-menu');
+			$('.overlay').addClass('hide');
+		});
+		
+		
+	});
 		</script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="validator.js"></script>
+		<script src="contact.js"></script>
 	
  </body>
 </html>

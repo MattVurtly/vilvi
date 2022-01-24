@@ -18,8 +18,8 @@
     <link rel="canonical" href="https://vilvi.io">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css?ver1.6">
-	<link rel="stylesheet" href="./assets/css/main.css?ver1.6">
+	
+	<link rel="stylesheet" href="./assets/css/style.css?ver1=1.95">
 
 	<!-- Font Michroma rememebr to host for China -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">	
@@ -39,15 +40,15 @@
 	<link href="./fa/css/fontawesome.css" rel="stylesheet">
 	<link href="./fa/css/brands.css" rel="stylesheet">
 	<link href="./fa/css/all.css" rel="stylesheet">
- 
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
 
 		<style type="text/css">
 		
 		body
 		{
 			font-family: 'Ubuntu', sans-serif;
-			box-shadow:inset 0 0 0 2000px rgba(25, 25, 36, 0.688);
-			background:url(./assets/img/vilvi-deck.png) no-repeat center;
+			box-shadow:inset 0 0 0 100px rgba(23, 23, 53, 0.001);
+
 			background-position: center;
   			background-size: cover;
 		}
@@ -104,18 +105,22 @@
   			opacity: 60%;
 		}
 
+		.btn-artist:hover{
+			color: #242633 !important;
+		}
+
 		</style>
 
 		<script>
 			setTimeout(function() {
 				$('body').addClass('loaded');
-    }, 3000)
+    }, 2000)
 		</script>
 	</head>
 
 	<body class="home">
 		<video autoplay muted loop id="myVideo">
-			<source src="./assets/img/static-video.mp4" type="video/mp4">
+			<source src="./assets/img/Vilvi-Deckplayer..mp4" type="video/mp4">
 			Your browser does not support HTML5 video.
 		  </video> 
 <!-- Messenger Chat plugin Code 
@@ -174,6 +179,7 @@
       <header class="masthead" >
         <div class="inner">
           <h3 class="masthead-brand"><a href="index.html"><img src="assets/img/vinyl_logo.png" height="50px" class="record_spin"></a><span class="logo"><span style="color:#FBFF02">VILVI</span><span class="virtually" style="font-family: 'Pagal', sans-serif;"> Virtually Vinyl</span></h3>
+		  <!-- Updated Nav -->
 		  <div class="mob-nav-toggler">
 			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				☰
@@ -199,79 +205,92 @@
 	 
       <main role="main" class="cover" >
       <div>
-        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-4s" style="padding-bottom: 20px; color: #FBFF02;">Original Vinyl NFT Store</h3>
-		<p class="animate__animated animate__fadeIn animate__delay-4s ">Create hybrid physical and digital music twins on Vinyl with NFT.
-			<br> For independent artists, collectors, labels and publishers.</p>
-        <div class="text-center">
-          <a href="About.html" class="animate__animated animate__fadeIn animate__delay-4s border-4 btn btn-sm btn-secondary grow" style="margin-bottom: 20px;">Learn More</a>
-		</div>
+        <h3 class="cover-heading animate__animated animate__fadeIn animate__delay-3s" style="padding-bottom: 20px; color: #FBFF02;">Original Vinyl NFT Store</h3>
+		<h3 class="animate__animated animate__fadeIn animate__delay-3sroadmaptxt"><span style="color:#FBFF02">VILVI</span><span class="virtually" ></span> is a revolutionary new service that merges the worlds of physical and digital music distribution. </h3>
+		</p>
+        
 
-<!--	<div class="crystal-cards-cont">
-			<div class="row">
+		<div class="crystal-cards-cont cover-heading ">
+			<div class="row" style="margin-top: 10px;">
 				<div class="col-12 col-md-4">
-					<div class="card card1">
-						<div class="card-body">
-							<div class="card-img">
-							  <img src="assets/img/crystal1.jpg" alt="Crystal card 1" />
+					<div class=" card1 animate__animated animate__fadeInLeft animate__delay-4s cardhome">
+						<div class="card-body ">
+						
+							<div class="card-img text-center">
+								<h3>Artists/Labels</h3>
+							  <!--<img src="assets/img/crystal1.jpg" alt="Crystal card 1" />-->
+							  <img src="assets/img/Vilvi-Artists.jpg">
+							
 							</div>
 							<div class="card-txt text-center">
-							  <h3>Crystal Card 1</h3>
-							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							  <h5>NFT Collection 1</h5>
+							  
+							  <p>Physical and digital music twins on Vinyl with NFT. Exclusive events, media, videos, artwork, interviews, merch can be connected to an NFT.
+							</p>
+							<a href="https://forms.gle/PrueSeW9CocZs2jo8" class="btn btn-outline-primary btn-rounded btn-artist" target="blank" style="color: #F7F7F7!important;"></style>APPLY HERE</a>
+							<!--<div class="text-center">
+								<a href="https://forms.gle/PrueSeW9CocZs2jo8" target="blank" class="animate__animated animate__fadeIn animate__delay-4s border-4 btn btn-sm btn-primary grow" style="margin-bottom: 20px;">Apply Here</a>
+							  
+							</div> -->
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-4">
-				  <div class="card card2">
-					  <div class="card-body">
+				<div class="col-12 col-md-4 cover-heading animate__animated animate__fadeInUp animate__delay-4s cardhome ">
+				  <div class="cardhome card2 ">
+					  <div class="card-body ">
+						<h3>Investors</h3>
 						  <div class="card-img">
-							<img src="assets/img/crystal2.jpg" alt="Crystal card 2" />
-						  </div>
-						  <div class="card-txt text-center">
-							<h3>Crystal Card 2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							<h5>NFT Collection 1</h5>
+					<img src="assets/img/Vilvi-invest.jpg" alt="Crystal card 2" />
+					 
+						</div class="">
+						  <div class="card-txt text-center ">
+							
+							<p>Private Token launch of VLV token & staking pools, Investors can back new releases in return for a percentage of the sales or royalties. </p>
+							<a href="#" class="btn btn-outline-primary btn-rounded btn-artist" target="blank" style="color: #F7F7F7!important;"></style>COMING SOON</a>
+							<!--<div class="text-center">
+								<a href="About.html" class="animate__animated animate__fadeIn animate__delay-4s border-4 btn btn-sm btn-secondary grow" style="margin-bottom: 20px;">Learn More</a>
+							  </div> -->
 						  </div>
 					  </div>
 				  </div>
 			  </div>
-			  <div class="col-12 col-md-4">
-				  <div class="card card3">
-					  <div class="card-body">
+			  <div class="col-12 col-md-4 cover-heading ">
+				  <div class="cardhome  card3 animate__animated animate__fadeInRight animate__delay-4s " >
+					  <div class="card-body ">
+						<h3>Collectors</h3>
 						  <div class="card-img">
-							<img src="assets/img/crystal3.jpg" alt="Crystal card 3" />
+							<img src="assets/img/Vilvi-NFT.jpg" alt="Crystal card 3" />
 						  </div>
 						  <div class="card-txt text-center">
-							<h3>Crystal Card 3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							<h5>NFT Collection 1</h5>
+							
+							<p> Our limited editions quantity digital file system guarantees fans provable ownership of releases on the blockchain to collect or sell.</p>
+								<a href="About.html" class="btn btn-outline-primary btn-rounded btn-artist" target="blank" style="color: #F7F7F7!important;"></style>LEARN MORE</a>
+								<!--	<div class="text-center">
+								<a href="About.html" class="animate__animated animate__fadeIn animate__delay-4s border-4 btn btn-sm btn-secondary grow" style="margin-bottom: 20px;">Learn More</a>
+							  </div> -->
 						  </div>
 					  </div>
 				  </div>
 			  </div>
 			</div>
 		</div>
--->
 
-		
+
+      </div>
 	 
 
-
 <!-- Begin Mailchimp Signup Form -->	
-<div class="animate__animated animate__fadeInLeft animate__delay-4s d-inline-flex p-3 mt-auto d-flex fixed-bottom mailchimp2">
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#FBFF02; clear:left; font:12px Michroma,Arial,sans-serif; padding-left: 10px;padding-right: 10px; }
 	#mce-FNAME  {background: #1A1E22 }
 	#mce-LNAME  {background: #1A1E22 }
 	#mce-EMAIL  {background: #1A1E22 }
 	.button {background-color: #121212 !important; color: #FBFF02 !important; }
-	.signup-text{font-size: 10px !important;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup" style="background-color: #242633;" class="mailchimp2">
+
+<!--<div id="mc_embed_signup" style="background-color: #242633;" class="mailchimp2 mailchimp-hide-mob">
 	<h2 class="text-left" style="font-size:11px; padding: 0px 10px 0 10px; letter-spacing: 1px;">Signup to  VILVI  mailing list<br>
 <form action="https://vilvi.us20.list-manage.com/subscribe/post?u=c7ac73ee92603f8f94822660b&amp;id=5a39d869c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -291,8 +310,8 @@
 	<div id="mce-responses" class="clear foot">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7ac73ee92603f8f94822660b_5a39d869c5" tabindex="-1" value=""></div>
+	</div> -->   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7ac73ee92603f8f94822660b_5a39d869c5" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
@@ -300,27 +319,17 @@
         </div>
     </div>
 </form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</div>-->
+
 </div>
 <!--End mc_embed_signup-->
 
       </main> 
 
-	</div>
-	<div class="row madewith">
-	  <div class="col-sm"></div>
-	  <div class="col-sm"></div>
-	<div class=" animate__animated animate__fadeInRight animate__delay-4s col-sm " style="background-color:rgba(43, 48, 48, 0.315); border-radius: 17px;margin-top: 250px; margin-bottom: 90px; z-index: 9999999;">
-		<p style="text-orientation:uprsideways;writing-mode: vertical-rl; padding-top: 30px;margin-right: -30px; text-align: right;opacity: 0.7;">MADE WITH CARDANO</p>
-		<a href="https://cardano.org/" target="blank"><img class="grow" src="/assets/img/cardano.png " style=" position: absolute; bottom: 20px; right: 25px;"></a>
-	</div>
-  </div>
 
 <!--Footer socials -->
 <footer class="animate__animated animate__fadeInUp animate__delay-1s mastfoot socials2" >
 	<div class="inner ">
-		
 		<p><a
 class="btn btn-primary btn-lg btn-floating border border-dark rounded-circle blackbut"
 style="background-color: #242633;"
@@ -357,15 +366,22 @@ role="button" alt="Vilvi on Telegram">
 </p>
 	</div>
   </footer>
+  <div class="cardino-cont">
+    
+  <div class=" animate__animated animate__fadeInRight animate__delay-4s cardino-badge">
+      <p style="text-orientation:uprsideways;writing-mode: vertical-rl; padding-top: 20px;margin-right: 0px; text-align: right;opacity: 0.7;">MADE WITH CARDANO</p>
+      <a href="https://cardano.org/" target="blank"><img class="grow" src="assets/img/cardano.png " ></a>
+  </div>
+</div>
 </div>
 
 <div class="animate__animated animate__fadeIn animate__delay-4s" style="width: 100vw; height: 100vh; z-index: -1; position: absolute; right: 0; bottom: 0;" id="three-container-cat" ></div>
       </div>
-
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	
 <!-- 	    <script type="module">
 
 		import * as THREE from './build/three.module.js';
@@ -549,20 +565,152 @@ role="button" alt="Vilvi on Telegram">
 			
 
 		</script>	-->
+		<!-- Subscribe button -->
+		<div class="subscribe-fixed-btn">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+				Subscribe
+			  </button>
+			</div>
+
+
+ <!-- The Modal -->
+ <div class="modal modal-sm contact-mdl subscribe-mdl" id="myModal2">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		
+  
+		<!-- Modal body -->
+		<div class="modal-body1">
+			<div id="mc_embed_signup" style="background-color: #242633; color: #F7F7F7;" class="mailchimp2 ">
+			<h2 class="text-left" style="font-size:11px; padding: 0px 10px 0 10px; letter-spacing: 1px;">Signup to  VILVI  mailing list<br></h2>
+				<form action="https://vilvi.us20.list-manage.com/subscribe/post?u=c7ac73ee92603f8f94822660b&amp;id=5a39d869c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+				<div class="mc-field-group" style="margin-top: 20px;">
+					<label for="mce-FNAME" class="signup-text" >First Names </label>
+					<input type="text" value="" name="FNAME" class="signup-text" id="mce-FNAME">
+				</div>
+				<div class="mc-field-group">
+					<label for="mce-LNAME">Last Name </label>
+					<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+				</div>
+				<div class="mc-field-group" style="margin-bottom: 20px;">
+					<label for="mce-EMAIL">Email  
+				</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+					<div id="mce-responses" class="clear foot">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c7ac73ee92603f8f94822660b_5a39d869c5" tabindex="-1" value=""></div>
+						<div class="optionalParent">
+							<div class="clear foot">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+  
+		<!-- Modal footer -->
+		<!--<div class="modal-footer">
+		  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>-->
+  
+	  </div>
+	</div>
+  </div>
+
+  
+
+
+
+		<!-- Button to Open the Modal -->
+		<div class="contact-fixed-btn">
+<button type="homebutton" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	Email Us
+  </button>
+</div>
+  
+  <!-- The Modal 1-->
+  <div class="modal contact-mdl" id="myModal">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Email Us</h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body">
+		  <!-- Form -->
+		  <form class="text-center" method="post" style="color: #757575;" id="contact-form" action="#!">
+<div class="messages"></div>
+			<!-- Name -->
+			<div class="md-form group text-left">
+				<!--<label for="materialLoginFormEmail">Name</label>-->
+			  <input type="text" class="form-control" name="name" placeholder="Name">
+			  
+			</div>
+	  
+			<!-- Email -->
+			<div class="md-form group text-left">
+				<!--<label for="materialLoginFormPassword">Email</label>-->
+			  <input type="email" class="form-control" name="email"  placeholder="Email">
+			  
+			</div>
+			<!-- Subject -->
+			<div class="md-form group text-left">
+				<label for="materialLoginFormPassword">Subject</label>
+			  <select class="form-control" name="subject" >
+				  <option>Aritst / Label</option>
+				  <option>Investor</option>
+				  <option>NFT / Vinyl Collector</option>
+				  <option>Creator of NFT</option>
+				  <option>Other</option>
+			  </select>
+			  
+			</div>
+		<!-- Message -->
+		<div class="md-form group text-left">
+			<label for="materialLoginFormPassword">Message</label>
+		<textarea class="form-control" name="message" placeholder="Message"></textarea>
+		</div>
+		<div class="md-form group text-left">
+		<div class="form-group">
+			<div class="g-recaptcha" data-sitekey="6LezZxYeAAAAAF2YSzcy0DK21moyhVnB0_6N-Rie" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+			<input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+			<div class="help-block with-errors"></div>
+		</div>
+		</div>
+			<!-- Sign in button -->
+			<button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">SEND</button>
+	
+		  </form>
+		  <!-- Form -->
+		
+  
+	  </div>
+	</div>
+  </div>
 <script>
 	jQuery(document).ready(function($){
 		$('.mob-nav-toggler .navbar-toggler').click(function(){
-			$('.main-nav').toggle();
+			//$('.main-nav').toggle();
 			$('.main-nav').addClass('open-menu');
 			$('.overlay').removeClass('hide');
 		});
 		$('.main-nav ._close').click(function(){
-			$('.main-nav').toggle();
+			//$('.main-nav').toggle();
 			$('.main-nav').removeClass('open-menu');
 			$('.overlay').addClass('hide');
 		});
 		$('.overlay').click(function(){
-			$('.main-nav').toggle();
+			//$('.main-nav').toggle();
 			$('.main-nav').removeClass('open-menu');
 			$('.overlay').addClass('hide');
 		});
@@ -570,6 +718,9 @@ role="button" alt="Vilvi on Telegram">
 		
 	});
 	</script>
-	
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="validator.js"></script>
+		<script src="contact.js"></script>
  </body>
 </html>

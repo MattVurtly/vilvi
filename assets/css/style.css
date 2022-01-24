@@ -70,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3b3b3b;
+  ;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -745,39 +745,197 @@ footer.socials2 p {
 	height: auto;
   margin-bottom: 20px;
 }
+
+.card-body:hover{
+  box-shadow: 0 0 21px rgba(241, 239, 239, 0.459); 
+}
 .crystal-cards-cont .card-img{text-align: center;}
 .card1 .card-body {
 	background-image: linear-gradient(#47327d,#1c0d36);
   border: 2px solid #9a82da;
+  border-radius: 17px;
+  margin: 22px;
 }
 .card2 .card-body {
 	background-image: linear-gradient(#80347c,#2e0928);
   border: 2px solid #dc9198;
+  border-radius: 17px;
+  margin: 22px;
 }
 .card3 .card-body {
 	background-image: linear-gradient(#7036a4,#270d3a);
   border: 2px solid #b34eda;
+  border-radius: 17px;
+  margin: 22px;
 }
 .crystal-cards-cont .card1 .card-img img{border: 2px solid #9baef0; border-radius: 10px;}
 .crystal-cards-cont .card2 .card-img img{border: 2px solid #aa4581; border-radius: 10px;}
 .crystal-cards-cont .card3 .card-img img{border: 2px solid #bd95eb; border-radius: 10px;}
-.home .cover {padding-bottom: 250px !important; text-align: center;}
+.home .cover {padding-bottom: 10px !important; text-align: center;}
 .crystal-cards-cont .card {
 	margin-bottom: 20px;
 }
 .crystal-cards-cont .card1 .card-txt {
-	color: #867bc9;
+	color: #beb7ee;
 }
 .crystal-cards-cont .card2 .card-txt {
-  color: #9f5a9b;
+  color: #c99cc6;
 	
 }
 .crystal-cards-cont .card3 .card-txt {
-	color: #9b4bc6;
+	color: #a087ad;
 }
 .crystal-cards-cont .card-txt h3 {
-	text-shadow: 2px 2px 6px;
+	text-shadow: 2px 1px 2px;
 }
+
+.contact-fixed-btn {
+	position: fixed;
+	bottom: 80px;
+  right: 5px;
+  z-index: 9999;
+}
+.contact-mdl .modal-body {
+	position: relative;
+	padding: 20px;
+	min-height: 400px;
+	background: #fff;
+}
+
+.contact-mdl .modal-header {
+	background: #2e2e2e !important;
+	color: #FBFF02 !important;
+}
+
+.contact-mdl a {
+	color: #007bff;
+}
+.contact-mdl .form-control {
+	border: 0px;
+	border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+.contact-mdl .md-form.group {
+	margin-bottom: 10px;
+}
+.contact-mdl .close {
+	margin: 0;
+	padding: 0;
+	right: 6px;
+	color: #333;
+	top: 18px;
+}
+.subscribe-fixed-btn {
+	position: fixed;
+	bottom: 80px;
+	left: 5px;
+	z-index: 9999;
+}
+.modal-sm {
+	max-width: 350px;
+	margin: auto;
+}
+.modal-sm #mc_embed_signup {
+	padding: 20px;
+}
+.cardino-cont {
+  position: fixed;
+  right: 0;
+  width: 50px;
+  top: 300px;
+  z-index: 99999;
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px 0 0 12px;
+}
+.cardino-badge a {
+  position: absolute;
+  display: block;
+  top: 200px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+}
+.cardino-badge a img.grow {
+  height: auto;
+}
+.contact-mdl .modal-title {
+  color: #FBFF02;
+}
+.cardino-badge{position: relative;}
+
+
+.tokenimg{
+  min-width: 33vw !important;
+  margin-left: -5%;
+  margin-top: -30px;
+}
+
+.roadmapimg{
+  margin-left: -10%;
+}
+.roadmaptxt{
+  font-size:x-large;
+}
+
+.aboutxt{
+  font-size:large;
+  text-align: justify;
+  margin-top: -10px;
+}
+
+.whiteimg{
+  min-height: 400px !important;
+  
+}
+
+.Aboutimg{
+  min-height: 233px !important;
+  max-width: 233px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.Aboutimg2{
+  min-height: 233px !important;
+  border-style: solid;
+  border-color:#fafc9bde  ;
+  border-width: thick;
+  border-radius: 17px;
+  margin-bottom: 20px;
+  
+}
+
+.btn-primary{
+  color: #1c1c1d !important;
+  font-weight: bolder !important;
+  text-transform: uppercase;
+}
+
+button{
+  background-image: linear-gradient(-45deg,#FBFF02, #0dff0d, #00ffff, #0099ff);
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  background-size: 400% 400%;
+  animation: mymove 7s linear infinite;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 /******************** Responsive ****************/
 
 @media (min-width: 992px){
@@ -785,10 +943,12 @@ footer.socials2 p {
 .main-nav{display: block !important;}
 .main-nav ._close {display: none;}
 .mob-logo{display: none;}
+
 }
 
 @media (max-width: 992px){
   .mob-nav-toggler{display: block;}
+  .subscribe-fixed-btn{display: block;}
   .mob-logo {
     display: block;
     text-align: center;
@@ -798,6 +958,7 @@ footer.socials2 p {
     top: -5px;
   }
   .main-nav{display: none;}
+  .main-nav.open-menu{display: block;}
   .main-nav .nav li a{width: 100%;}
   .main-nav .nav.nav-masthead {
     position: fixed;
@@ -825,20 +986,44 @@ text-align: center;
     display: block;
   }
   .overlay {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.3);
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 999;
+    opacity: 0.4;
   }
 }
 @media (max-width: 768px){
+..modal-content{
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+  .Aboutimg{
+    min-height: 233px !important;
+    max-width: 233px;
+    margin-top: -30px;
+  }
+  .roadmaptxt{
+    font-size:medium;
+    text-align: justify;
+  }
+
+  .tokenimg{
+    margin-top: 30px;
+    margin-left: -1%;
+  }
+  .roadmapimg{
+    margin-left: -1%;
+  }
   .masthead-brand {
     margin-bottom: 0;
     text-align: left;
   }
   .logo{font-size: 15px;}
   .mob-nav-toggler{top: 10px;}
+  html, body{height: auto !important;}
 }
 @media all and (max-width: 660px) {
   #carbonads {

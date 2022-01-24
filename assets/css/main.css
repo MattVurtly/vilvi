@@ -129,6 +129,18 @@ btn-primary:hover{
   
 }
 
+.homecard {
+  border-radius: 50%;
+  border-color: #b4be58e0;
+  border-width: 4px;
+}
+
+.cardhome {
+  border: 0px !important;
+  }
+  
+  
+
 .cardshadow{
   box-shadow: 0 0 20px #ccc;
 }
@@ -136,11 +148,11 @@ btn-primary:hover{
 .grow { transition: all .2s ease-in; }
 .grow:hover { transform: scale(1.1); }
 
-img { 
+.vilimg { 
 	transition: all .2s ease-in-out; 
 }
-img:hover { 
-    	transform: scale(1.5); 
+.vilimg:hover { 
+    	transform: scale(1.1); 
     }
 
 /* loaded styles */
@@ -286,12 +298,29 @@ h2{
 }
 
 /*
- * img modal
+ * Signup Form
  */
+
+ #mce-FNAME.signup-text{
+   color: #f7f7f7 !important;
+ }
+ #mce-LNAME{
+  color: #f7f7f7 !important;
+ }
+
+ #mce-EMAIL.required.email{
+  color: #f7f7f7 !important;
+ }
+
+/*
+ * Modal Form
+ */
+
+
 
 .modal-dialog {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 30px 20px;
 }
 
 .modal-body {
@@ -456,6 +485,9 @@ a:hover span {
 }
 .faq-accordian .card .card-body p:last-child {
   margin-bottom: 0;
+}
+.card-header:hover{
+  background-color: #656566f3 !important; 
 }
 
 .mailchimp{display: none;}
